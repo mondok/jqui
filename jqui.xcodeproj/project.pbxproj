@@ -15,6 +15,7 @@
 		9DFD19AA1B95261000AD3535 /* jq-osx-amd64 in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD19A91B95261000AD3535 /* jq-osx-amd64 */; };
 		9DFD19AD1B953A0600AD3535 /* QueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */; };
 		9DFD19AF1B95402D00AD3535 /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD19AE1B95402D00AD3535 /* JsonUtils.swift */; };
+		9DFD19B11B95468D00AD3535 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD19B01B95468D00AD3535 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9DFD19A91B95261000AD3535 /* jq-osx-amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "jq-osx-amd64"; path = "jq/jq-osx-amd64"; sourceTree = "<group>"; };
 		9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryRunner.swift; path = classes/QueryRunner.swift; sourceTree = "<group>"; };
 		9DFD19AE1B95402D00AD3535 /* JsonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonUtils.swift; path = classes/JsonUtils.swift; sourceTree = "<group>"; };
+		9DFD19B01B95468D00AD3535 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				9DFD198F1B95257A00AD3535 /* Images.xcassets */,
 				9DFD19911B95257A00AD3535 /* Main.storyboard */,
 				9DFD19891B95257A00AD3535 /* Supporting Files */,
+				9DFD19B01B95468D00AD3535 /* HelpViewController.swift */,
 			);
 			path = jqui;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				9DFD19AF1B95402D00AD3535 /* JsonUtils.swift in Sources */,
 				9DFD198C1B95257A00AD3535 /* AppDelegate.swift in Sources */,
 				9DFD19AD1B953A0600AD3535 /* QueryRunner.swift in Sources */,
+				9DFD19B11B95468D00AD3535 /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

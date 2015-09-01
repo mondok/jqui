@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="7706"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -630,6 +631,7 @@
                                         <menuItem title="jqui Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <segue destination="IVQ-zd-fpB" kind="show" id="DlI-ET-2kO"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -644,7 +646,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="jqui" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="429.5" y="-42"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -662,7 +664,35 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165.5" y="296.5"/>
+            <point key="canvasLocation" x="110.5" y="444.5"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="1a9-Li-KMG">
+            <objects>
+                <viewController id="IVQ-zd-fpB" customClass="HelpViewController" customModule="jqui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="9zb-jX-1dy">
+                        <rect key="frame" x="0.0" y="0.0" width="570" height="464"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <webView translatesAutoresizingMaskIntoConstraints="NO" id="R28-qm-WaI">
+                                <rect key="frame" x="0.0" y="0.0" width="570" height="464"/>
+                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="R28-qm-WaI" firstAttribute="top" secondItem="9zb-jX-1dy" secondAttribute="top" id="Cb9-Ao-j2M"/>
+                            <constraint firstAttribute="bottom" secondItem="R28-qm-WaI" secondAttribute="bottom" id="U0m-Hv-wB8"/>
+                            <constraint firstItem="R28-qm-WaI" firstAttribute="leading" secondItem="9zb-jX-1dy" secondAttribute="leading" id="j0c-BQ-W5a"/>
+                            <constraint firstAttribute="trailing" secondItem="R28-qm-WaI" secondAttribute="trailing" id="zQp-gg-xzt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helpWebView" destination="R28-qm-WaI" id="XCK-ow-XNY"/>
+                    </connections>
+                </viewController>
+                <customObject id="giA-8Q-9a3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="300"/>
         </scene>
         <!--Json Process View Controller-->
         <scene sceneID="hIz-AP-VOD">
