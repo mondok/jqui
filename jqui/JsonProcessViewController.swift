@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  JsonProcessViewController.swift
 //  jqui
 //
 //  Created by Matthew Mondok on 8/31/15.
@@ -18,21 +18,36 @@ class JsonProcessViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override var representedObject: AnyObject? {
-        didSet {
-            // Update the view, if already loaded.
-        }
+        didSet {        }
     }
     
     @IBAction func processJson(sender: AnyObject) {
-        let output = _queryRunner.runTask(jsonInputTextView.string!, query: jqQueryTextField.stringValue)
+        var inputText = jsonInputTextView.string!
+        var query = jqQueryTextField.stringValue
+        
+        if !JsonUtils.isValidJson(inputText){
+            showError("Invalid JSON entered")
+            return
+        }
+        if query == "" {
+            showError("Please enter a query")
+            return
+        }
+        
+        let output = _queryRunner.runTask(inputText, query: query)
         jqQueryOutput.string = output
+        jsonInputTextView.string = JsonUtils.prettyPrint(inputText)
     }
     
-   
+    func showError(err:String){
+        var alert = NSAlert()
+        alert.informativeText = err
+        alert.runModal()
+    }
+    
     
 }
 
