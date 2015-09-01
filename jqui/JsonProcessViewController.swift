@@ -23,8 +23,12 @@ class JsonProcessViewController: NSViewController {
     override var representedObject: AnyObject? {
         didSet {        }
     }
+    @IBAction func prettifyTapped(sender: AnyObject) {
+        var inputText = jsonInputTextView.string!
+        jsonInputTextView.string = JsonUtils.prettyPrint(inputText)
+    }
     
-    @IBAction func processJson(sender: AnyObject) {
+    @IBAction func processJsonTapped(sender: AnyObject) {
         var inputText = jsonInputTextView.string!
         var query = jqQueryTextField.stringValue
         
@@ -39,7 +43,7 @@ class JsonProcessViewController: NSViewController {
         
         let output = _queryRunner.runTask(inputText, query: query)
         jqQueryOutput.string = output
-        jsonInputTextView.string = JsonUtils.prettyPrint(inputText)
+        
     }
     
     func showError(err:String){

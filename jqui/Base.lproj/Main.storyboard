@@ -680,7 +680,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vv7-OV-MfV">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vv7-OV-MfV">
                                 <rect key="frame" x="18" y="500" width="60" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="jq Query:" id="x2K-SR-2LF">
                                     <font key="font" metaFont="system"/>
@@ -695,7 +695,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="processJson:" target="XfG-lQ-9wD" id="vkE-UX-fgm"/>
+                                    <action selector="processJsonTapped:" target="XfG-lQ-9wD" id="qZC-XG-8ci"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xi7-Fw-zCc">
@@ -706,7 +706,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUL-zO-i02">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUL-zO-i02">
                                 <rect key="frame" x="20" y="462" width="76" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="JSON Input" id="ceA-tD-KpI">
                                     <font key="font" metaFont="system"/>
@@ -770,6 +770,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ay9-64-zVN">
+                                <rect key="frame" x="102" y="460" width="66" height="17"/>
+                                <buttonCell key="cell" type="inline" title="Prettify" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="fca-uu-lxP">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="prettifyTapped:" target="XfG-lQ-9wD" id="kNV-pq-2jb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="k6F-ml-kvF" secondAttribute="bottom" constant="20" id="6dq-FL-zaM"/>
@@ -783,9 +793,11 @@
                             <constraint firstItem="k6F-ml-kvF" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="95" id="Syy-Nd-ztw"/>
                             <constraint firstAttribute="bottom" secondItem="v3d-Iv-BHR" secondAttribute="bottom" constant="20" id="UOC-en-BZT"/>
                             <constraint firstItem="v3d-Iv-BHR" firstAttribute="width" secondItem="k6F-ml-kvF" secondAttribute="width" id="ggV-47-D9C"/>
+                            <constraint firstItem="LUL-zO-i02" firstAttribute="trailing" secondItem="Ay9-64-zVN" secondAttribute="trailing" constant="-74" id="mmM-SH-c0D"/>
                             <constraint firstItem="k6F-ml-kvF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="rNq-Rz-ESA"/>
                             <constraint firstItem="UAd-Ye-6vI" firstAttribute="trailing" secondItem="YyR-fn-ew9" secondAttribute="trailing" constant="-92" id="tuy-g6-GDZ"/>
                             <constraint firstItem="v3d-Iv-BHR" firstAttribute="leading" secondItem="k6F-ml-kvF" secondAttribute="trailing" constant="41" id="vLe-jA-cPW"/>
+                            <constraint firstItem="Vv7-OV-MfV" firstAttribute="bottom" secondItem="Ay9-64-zVN" secondAttribute="bottom" constant="-39" id="vsV-7L-iaW"/>
                             <constraint firstAttribute="trailing" secondItem="xi7-Fw-zCc" secondAttribute="trailing" constant="20" id="x4w-Zm-NdD"/>
                             <constraint firstAttribute="trailing" secondItem="v3d-Iv-BHR" secondAttribute="trailing" constant="20" id="ylD-uv-PX8"/>
                         </constraints>
