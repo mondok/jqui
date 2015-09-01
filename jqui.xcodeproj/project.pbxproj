@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9DFD198C1B95257A00AD3535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD198B1B95257A00AD3535 /* AppDelegate.swift */; };
-		9DFD198E1B95257A00AD3535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD198D1B95257A00AD3535 /* ViewController.swift */; };
+		9DFD198E1B95257A00AD3535 /* JsonProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD198D1B95257A00AD3535 /* JsonProcessViewController.swift */; };
 		9DFD19901B95257A00AD3535 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD198F1B95257A00AD3535 /* Images.xcassets */; };
 		9DFD19931B95257A00AD3535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD19911B95257A00AD3535 /* Main.storyboard */; };
 		9DFD199F1B95257A00AD3535 /* jquiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD199E1B95257A00AD3535 /* jquiTests.swift */; };
+		9DFD19AA1B95261000AD3535 /* jq-osx-amd64 in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD19A91B95261000AD3535 /* jq-osx-amd64 */; };
+		9DFD19AD1B953A0600AD3535 /* QueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +30,14 @@
 		9DFD19861B95257A00AD3535 /* jqui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jqui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFD198A1B95257A00AD3535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DFD198B1B95257A00AD3535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DFD198D1B95257A00AD3535 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DFD198D1B95257A00AD3535 /* JsonProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonProcessViewController.swift; sourceTree = "<group>"; };
 		9DFD198F1B95257A00AD3535 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9DFD19921B95257A00AD3535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DFD19981B95257A00AD3535 /* jquiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jquiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFD199D1B95257A00AD3535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DFD199E1B95257A00AD3535 /* jquiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jquiTests.swift; sourceTree = "<group>"; };
+		9DFD19A91B95261000AD3535 /* jq-osx-amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "jq-osx-amd64"; path = "jq/jq-osx-amd64"; sourceTree = "<group>"; };
+		9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryRunner.swift; path = classes/QueryRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,10 @@
 		9DFD19881B95257A00AD3535 /* jqui */ = {
 			isa = PBXGroup;
 			children = (
+				9DFD19AB1B9539A700AD3535 /* classes */,
+				9DFD19A81B95260300AD3535 /* jq */,
 				9DFD198B1B95257A00AD3535 /* AppDelegate.swift */,
-				9DFD198D1B95257A00AD3535 /* ViewController.swift */,
+				9DFD198D1B95257A00AD3535 /* JsonProcessViewController.swift */,
 				9DFD198F1B95257A00AD3535 /* Images.xcassets */,
 				9DFD19911B95257A00AD3535 /* Main.storyboard */,
 				9DFD19891B95257A00AD3535 /* Supporting Files */,
@@ -107,6 +113,22 @@
 				9DFD199D1B95257A00AD3535 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DFD19A81B95260300AD3535 /* jq */ = {
+			isa = PBXGroup;
+			children = (
+				9DFD19A91B95261000AD3535 /* jq-osx-amd64 */,
+			);
+			name = jq;
+			sourceTree = "<group>";
+		};
+		9DFD19AB1B9539A700AD3535 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFD19901B95257A00AD3535 /* Images.xcassets in Resources */,
+				9DFD19AA1B95261000AD3535 /* jq-osx-amd64 in Resources */,
 				9DFD19931B95257A00AD3535 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,8 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFD198E1B95257A00AD3535 /* ViewController.swift in Sources */,
+				9DFD198E1B95257A00AD3535 /* JsonProcessViewController.swift in Sources */,
 				9DFD198C1B95257A00AD3535 /* AppDelegate.swift in Sources */,
+				9DFD19AD1B953A0600AD3535 /* QueryRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
