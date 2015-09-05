@@ -432,6 +432,7 @@
 				9DFD19A41B95257A00AD3535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DFD19A51B95257A00AD3535 /* Build configuration list for PBXNativeTarget "jquiTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +441,7 @@
 				9DFD19A71B95257A00AD3535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
