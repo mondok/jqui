@@ -13,6 +13,7 @@ class JsonProcessViewController: NSViewController {
     @IBOutlet var jqQueryOutput: NSTextView!
     @IBOutlet weak var jqQueryTextField: NSTextField!
     @IBOutlet var jsonInputTextView: NSTextView!
+    @IBOutlet weak var nameTextField: NSTextFieldCell!
     
     var _queryRunner:QueryRunner = QueryRunner()
     
