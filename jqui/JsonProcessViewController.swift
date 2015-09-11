@@ -17,8 +17,22 @@ class JsonProcessViewController: NSViewController {
     
     var _queryRunner:QueryRunner = QueryRunner()
     
+    var _savedDocument:JQSavedQuery = JQSavedQuery(name: "Untitled", json: "", query: "")
+    
     override func viewDidLoad() {
+        loadDoc()
         super.viewDidLoad()
+    }
+    
+    func loadDoc(){
+        nameTextField.stringValue = _savedDocument.savedName
+        jqQueryTextField.stringValue = _savedDocument.query
+        jqQueryOutput.string = _savedDocument.queryResult
+        jsonInputTextView.string = _savedDocument.originalJson
+    }
+    
+    @IBAction func saveDocumentAs (sender: AnyObject) {
+        _savedDocument.saveDocumentAs(sender)
     }
     
     override var representedObject: AnyObject? {
