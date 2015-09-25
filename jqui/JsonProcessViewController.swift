@@ -39,13 +39,13 @@ class JsonProcessViewController: NSViewController {
         didSet {        }
     }
     @IBAction func prettifyTapped(sender: AnyObject) {
-        var inputText = jsonInputTextView.string!
+        let inputText = jsonInputTextView.string!
         jsonInputTextView.string = JsonUtils.prettyPrint(inputText)
     }
     
     @IBAction func processJsonTapped(sender: AnyObject) {
-        var inputText = jsonInputTextView.string!
-        var query = jqQueryTextField.stringValue
+        let inputText = jsonInputTextView.string!
+        let query = jqQueryTextField.stringValue
         
         if !JsonUtils.isValidJson(inputText){
             showError("Invalid JSON entered")
@@ -62,7 +62,7 @@ class JsonProcessViewController: NSViewController {
     }
     
     func showError(err:String){
-        var alert = NSAlert()
+        let alert = NSAlert()
         alert.informativeText = err
         alert.runModal()
     }

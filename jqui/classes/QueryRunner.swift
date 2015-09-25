@@ -22,15 +22,15 @@ class QueryRunner{
     
     func saveTextToTemp(text:String) -> String{
         let file = "scratch.json"
-        var path:String = ""
         
-        if let dirs : [String] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.AllDomainsMask, true) as? [String] {
-            let dir = dirs[0] //documents directory
-            path = dir.stringByAppendingPathComponent(file);
-            text.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding, error: nil);
-            let text2 = String(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil)
-            
-        }
-        return path
+        let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.CachesDirectory, inDomains: .UserDomainMask)[0]
+        let fileURL = documentsURL.URLByAppendingPathComponent(file)
+
+        do {
+            try text.writeToURL(fileURL, atomically: false, encoding: NSUTF8StringEncoding)
+        } catch _ {
+        };
+        
+        return fileURL.path!
     }
 }

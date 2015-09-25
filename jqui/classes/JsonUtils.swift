@@ -12,22 +12,27 @@ import Foundation
 class JsonUtils{
     class func isValidJson(str:String)->Bool{
         var error: NSError?
-        jsonToAny(str, err: &error)
+        do {
+            try jsonToAny(str)
+        } catch let error1 as NSError {
+            error = error1
+        }
         return error == nil
     }
     
     class func prettyPrint(str:String)->String{
-        var error: NSError?
-        if let obj:AnyObject = jsonToAny(str, err: &error){
+        do {
+            let obj:AnyObject = try jsonToAny(str)
             return jsonStringify(obj, prettyPrinted: true)
+        } catch  {
         }
         return str
     }
     
     class func jsonStringify(value: AnyObject, prettyPrinted: Bool = false) -> String {
-        var options = prettyPrinted ? NSJSONWritingOptions.PrettyPrinted : nil
+        let options:NSJSONWritingOptions = prettyPrinted ? NSJSONWritingOptions.PrettyPrinted : NSJSONWritingOptions.init(rawValue: 0)
         if NSJSONSerialization.isValidJSONObject(value) {
-            if let data = NSJSONSerialization.dataWithJSONObject(value, options: options, error: nil) {
+            if let data = try? NSJSONSerialization.dataWithJSONObject(value, options: options) {
                 if let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
                     return string as String
                 }
@@ -36,9 +41,19 @@ class JsonUtils{
         return ""
     }
     
-    class func jsonToAny(str:String, err:NSErrorPointer) -> AnyObject?{
-        var data = str.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
-        let obj : AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: err)
-        return obj
+    class func jsonToAny(str:String) throws -> AnyObject{
+        var err: NSError! = NSError(domain: "Migrator", code: 0, userInfo: nil)
+        let data = str.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
+        let obj : AnyObject?
+        do {
+            obj = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
+        } catch let error as NSError {
+            err = error
+            obj = nil
+        }
+        if let value = obj {
+            return value
+        }
+        throw err
     }
 }

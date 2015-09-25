@@ -14,8 +14,8 @@ class HelpViewController: NSViewController {
     @IBOutlet weak var helpWebView: WebView!
 
     override func viewDidLoad() {
-        var url = NSURL(string: "https://stedolan.github.io/jq/manual/#Basicfilters")!
-        var req = NSURLRequest(URL: url)
+        let url = NSURL(string: "https://stedolan.github.io/jq/manual/#Basicfilters")!
+        let req = NSURLRequest(URL: url)
         helpWebView.mainFrame.loadRequest(req)
         super.viewDidLoad()
     }
