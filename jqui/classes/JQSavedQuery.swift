@@ -21,7 +21,7 @@ class JQSavedQuery: NSDocument {
     }
     
     func saveToDisk(pathAndName:String){
-        let strVal = JsonUtils.jsonStringify(self, prettyPrinted: false)
+        let strVal = JQJsonUtils.jsonStringify(self, prettyPrinted: false)
         do {
             try strVal.writeToFile(pathAndName, atomically: true, encoding: NSUTF8StringEncoding)
         } catch _ {
@@ -31,7 +31,7 @@ class JQSavedQuery: NSDocument {
     class func loadFromDisk(pathAndName:String) -> JQSavedQuery? {
         var obj:JQSavedQuery?
         if let strVal = try? NSString(contentsOfFile: pathAndName, encoding: NSUTF8StringEncoding){
-            obj = (try? JsonUtils.jsonToAny(strVal as String)) as! JQSavedQuery?
+            obj = (try? JQJsonUtils.jsonToAny(strVal as String)) as! JQSavedQuery?
         }
         return obj
     }
@@ -57,7 +57,7 @@ class JQSavedQuery: NSDocument {
         // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
         
         let obj = [savedName: self.savedName, originalJson: self.originalJson, query: self.query, queryResult: self.queryResult]
-        let json = JsonUtils.jsonStringify(obj)
+        let json = JQJsonUtils.jsonStringify(obj)
         
 
         

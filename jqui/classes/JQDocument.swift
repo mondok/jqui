@@ -47,7 +47,7 @@ class JQDocument: NSDocument {
             "qr": safeString(_contentViewControler!.jqOutputTextView.string!)]
         }
         
-        let json = JsonUtils.jsonStringify(obj)
+        let json = JQJsonUtils.jsonStringify(obj)
         return json.dataUsingEncoding(NSUTF8StringEncoding)!
     }
     

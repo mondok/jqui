@@ -9,7 +9,7 @@
 import Foundation
 
 
-class JsonUtils{
+class JQJsonUtils{
     class func isValidJson(str:String)->Bool{
         var error: NSError?
         do {

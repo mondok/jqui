@@ -14,9 +14,9 @@
 		9DDEF7E01BB8C351008EC1C1 /* JQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9DDEF7E21BB8C362008EC1C1 /* jq-osx-amd64 in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E11BB8C362008EC1C1 /* jq-osx-amd64 */; settings = {ASSET_TAGS = (); }; };
 		9DDEF7E81BB8C392008EC1C1 /* JQSavedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E31BB8C392008EC1C1 /* JQSavedQuery.swift */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7EA1BB8C392008EC1C1 /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E51BB8C392008EC1C1 /* JsonUtils.swift */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7EB1BB8C392008EC1C1 /* QueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E61BB8C392008EC1C1 /* QueryRunner.swift */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7EC1BB8C392008EC1C1 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E71BB8C392008EC1C1 /* HelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7EA1BB8C392008EC1C1 /* JQJsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E51BB8C392008EC1C1 /* JQJsonUtils.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7EB1BB8C392008EC1C1 /* JQQueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E61BB8C392008EC1C1 /* JQQueryRunner.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7EC1BB8C392008EC1C1 /* JQHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E71BB8C392008EC1C1 /* JQHelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQViewController.swift; path = classes/JQViewController.swift; sourceTree = "<group>"; };
 		9DDEF7E11BB8C362008EC1C1 /* jq-osx-amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "jq-osx-amd64"; path = "jq/jq-osx-amd64"; sourceTree = "<group>"; };
 		9DDEF7E31BB8C392008EC1C1 /* JQSavedQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQSavedQuery.swift; path = classes/JQSavedQuery.swift; sourceTree = "<group>"; };
-		9DDEF7E51BB8C392008EC1C1 /* JsonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonUtils.swift; path = classes/JsonUtils.swift; sourceTree = "<group>"; };
-		9DDEF7E61BB8C392008EC1C1 /* QueryRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryRunner.swift; path = classes/QueryRunner.swift; sourceTree = "<group>"; };
-		9DDEF7E71BB8C392008EC1C1 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = classes/HelpViewController.swift; sourceTree = "<group>"; };
+		9DDEF7E51BB8C392008EC1C1 /* JQJsonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQJsonUtils.swift; path = classes/JQJsonUtils.swift; sourceTree = "<group>"; };
+		9DDEF7E61BB8C392008EC1C1 /* JQQueryRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQQueryRunner.swift; path = classes/JQQueryRunner.swift; sourceTree = "<group>"; };
+		9DDEF7E71BB8C392008EC1C1 /* JQHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQHelpViewController.swift; path = classes/JQHelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				9DDEF7E31BB8C392008EC1C1 /* JQSavedQuery.swift */,
-				9DDEF7E51BB8C392008EC1C1 /* JsonUtils.swift */,
-				9DDEF7E61BB8C392008EC1C1 /* QueryRunner.swift */,
-				9DDEF7E71BB8C392008EC1C1 /* HelpViewController.swift */,
+				9DDEF7E51BB8C392008EC1C1 /* JQJsonUtils.swift */,
+				9DDEF7E61BB8C392008EC1C1 /* JQQueryRunner.swift */,
+				9DDEF7E71BB8C392008EC1C1 /* JQHelpViewController.swift */,
 				9DDEF7DD1BB8C351008EC1C1 /* JQDocument.swift */,
 				9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */,
 			);
@@ -166,12 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DDEF7DF1BB8C351008EC1C1 /* JQDocument.swift in Sources */,
-				9DDEF7EB1BB8C392008EC1C1 /* QueryRunner.swift in Sources */,
-				9DDEF7EC1BB8C392008EC1C1 /* HelpViewController.swift in Sources */,
+				9DDEF7EB1BB8C392008EC1C1 /* JQQueryRunner.swift in Sources */,
+				9DDEF7EC1BB8C392008EC1C1 /* JQHelpViewController.swift in Sources */,
 				9DDEF7E81BB8C392008EC1C1 /* JQSavedQuery.swift in Sources */,
 				9DDEF7CB1BB8C2CD008EC1C1 /* AppDelegate.swift in Sources */,
 				9DDEF7E01BB8C351008EC1C1 /* JQViewController.swift in Sources */,
-				9DDEF7EA1BB8C392008EC1C1 /* JsonUtils.swift in Sources */,
+				9DDEF7EA1BB8C392008EC1C1 /* JQJsonUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

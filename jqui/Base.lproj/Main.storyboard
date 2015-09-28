@@ -841,7 +841,7 @@
         <!--jq help-->
         <scene sceneID="Omj-O7-czh">
             <objects>
-                <viewController title="jq help" id="m84-qz-L5Z" customClass="HelpViewController" customModule="jqui" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="jq help" id="m84-qz-L5Z" customClass="JQHelpViewController" customModule="jqui" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="eQZ-Jh-11g">
                         <rect key="frame" x="0.0" y="0.0" width="1013" height="660"/>
                         <autoresizingMask key="autoresizingMask"/>

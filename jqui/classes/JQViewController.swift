@@ -18,7 +18,7 @@ class JQViewController: NSViewController {
     @IBOutlet weak var jqQueryTextField: NSTextField!
 
     
-    var _queryRunner:QueryRunner = QueryRunner()
+    let _queryRunner:JQQueryRunner = JQQueryRunner()
     
     
     override func viewDidLoad() {
@@ -51,14 +51,14 @@ class JQViewController: NSViewController {
     
     @IBAction func prettifyTapped(sender: AnyObject) {
         let inputText = jsonInputTextView.string!
-        jsonInputTextView.string = JsonUtils.prettyPrint(inputText)
+        jsonInputTextView.string = JQJsonUtils.prettyPrint(inputText)
     }
     
     @IBAction func processJsonTapped(sender: AnyObject) {
         let inputText = jsonInputTextView.string!
         let query = jqQueryTextField.stringValue
         
-        if !JsonUtils.isValidJson(inputText){
+        if !JQJsonUtils.isValidJson(inputText){
             showError("Invalid JSON entered")
             return
         }

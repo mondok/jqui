@@ -1,6 +1,6 @@
 import Cocoa
 
-class QueryRunner{
+class JQQueryRunner{
     
     func runTask(json:String, query:String)->String{
         let bundlePath = NSBundle.mainBundle().pathForResource("jq-osx-amd64", ofType: nil)        

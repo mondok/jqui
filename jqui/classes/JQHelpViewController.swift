@@ -9,7 +9,7 @@
 import Foundation
 import WebKit
 
-class HelpViewController: NSViewController {
+class JQHelpViewController: NSViewController {
     
     @IBOutlet weak var helpWebView: WebView!
 
