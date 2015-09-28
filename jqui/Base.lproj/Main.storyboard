@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="8191"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -630,6 +631,7 @@
                                         <menuItem title="jqui Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <segue destination="m84-qz-L5Z" kind="show" id="3mS-6t-G58"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -835,6 +837,36 @@
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="299.5"/>
+        </scene>
+        <!--jq help-->
+        <scene sceneID="Omj-O7-czh">
+            <objects>
+                <viewController title="jq help" id="m84-qz-L5Z" customClass="HelpViewController" customModule="jqui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="eQZ-Jh-11g">
+                        <rect key="frame" x="0.0" y="0.0" width="1013" height="660"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <webView translatesAutoresizingMaskIntoConstraints="NO" id="RxB-tI-sG6">
+                                <rect key="frame" x="0.0" y="0.0" width="1013" height="660"/>
+                                <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                                    <nil key="identifier"/>
+                                </webPreferences>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RxB-tI-sG6" secondAttribute="bottom" id="CNY-yr-hol"/>
+                            <constraint firstAttribute="trailing" secondItem="RxB-tI-sG6" secondAttribute="trailing" id="Eb7-Cp-ogh"/>
+                            <constraint firstItem="RxB-tI-sG6" firstAttribute="top" secondItem="eQZ-Jh-11g" secondAttribute="top" id="JNG-IV-NEr"/>
+                            <constraint firstItem="RxB-tI-sG6" firstAttribute="leading" secondItem="eQZ-Jh-11g" secondAttribute="leading" id="g6R-6N-0Wl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helpWebView" destination="RxB-tI-sG6" id="gGV-nY-Gjb"/>
+                    </connections>
+                </viewController>
+                <customObject id="0Ow-Ma-cF3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753.5" y="401"/>
         </scene>
     </scenes>
 </document>
