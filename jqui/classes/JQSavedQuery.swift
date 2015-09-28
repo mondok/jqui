@@ -55,7 +55,17 @@ class JQSavedQuery: NSDocument {
     override func dataOfType(typeName: String) throws -> NSData {
         // Insert code here to write your document to data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning nil.
         // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
-        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+        
+        let obj = [savedName: self.savedName, originalJson: self.originalJson, query: self.query, queryResult: self.queryResult]
+        let json = JsonUtils.jsonStringify(obj)
+        
+
+        
+//        do {
+//            try json.writeToFile(typeName, atomically: false, encoding: NSUTF8StringEncoding)
+//        } catch _ {
+//        };
+        return json.dataUsingEncoding(NSUTF8StringEncoding)!
     }
     
     override func readFromData(data: NSData, ofType typeName: String) throws {

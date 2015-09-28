@@ -7,54 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DD71A5A1BA0F493000CADEC /* JQSavedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD71A591BA0F493000CADEC /* JQSavedQuery.swift */; };
-		9DFD198C1B95257A00AD3535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD198B1B95257A00AD3535 /* AppDelegate.swift */; };
-		9DFD198E1B95257A00AD3535 /* JsonProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD198D1B95257A00AD3535 /* JsonProcessViewController.swift */; };
-		9DFD19901B95257A00AD3535 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD198F1B95257A00AD3535 /* Images.xcassets */; };
-		9DFD19931B95257A00AD3535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD19911B95257A00AD3535 /* Main.storyboard */; };
-		9DFD199F1B95257A00AD3535 /* jquiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD199E1B95257A00AD3535 /* jquiTests.swift */; };
-		9DFD19AA1B95261000AD3535 /* jq-osx-amd64 in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD19A91B95261000AD3535 /* jq-osx-amd64 */; };
-		9DFD19AD1B953A0600AD3535 /* QueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */; };
-		9DFD19AF1B95402D00AD3535 /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD19AE1B95402D00AD3535 /* JsonUtils.swift */; };
-		9DFD19B11B95468D00AD3535 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD19B01B95468D00AD3535 /* HelpViewController.swift */; };
+		9DDEF7CB1BB8C2CD008EC1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7CA1BB8C2CD008EC1C1 /* AppDelegate.swift */; };
+		9DDEF7D11BB8C2CD008EC1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7D01BB8C2CD008EC1C1 /* Assets.xcassets */; };
+		9DDEF7D41BB8C2CD008EC1C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7D21BB8C2CD008EC1C1 /* Main.storyboard */; };
+		9DDEF7DF1BB8C351008EC1C1 /* JQDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7DD1BB8C351008EC1C1 /* JQDocument.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7E01BB8C351008EC1C1 /* JQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7E21BB8C362008EC1C1 /* jq-osx-amd64 in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E11BB8C362008EC1C1 /* jq-osx-amd64 */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7E81BB8C392008EC1C1 /* JQSavedQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E31BB8C392008EC1C1 /* JQSavedQuery.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7EA1BB8C392008EC1C1 /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E51BB8C392008EC1C1 /* JsonUtils.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7EB1BB8C392008EC1C1 /* QueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E61BB8C392008EC1C1 /* QueryRunner.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7EC1BB8C392008EC1C1 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E71BB8C392008EC1C1 /* HelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9DFD19991B95257A00AD3535 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DFD197E1B95257A00AD3535 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9DFD19851B95257A00AD3535;
-			remoteInfo = jqui;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		9DD71A591BA0F493000CADEC /* JQSavedQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQSavedQuery.swift; path = classes/JQSavedQuery.swift; sourceTree = "<group>"; };
-		9DFD19861B95257A00AD3535 /* jqui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jqui.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DFD198A1B95257A00AD3535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DFD198B1B95257A00AD3535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DFD198D1B95257A00AD3535 /* JsonProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonProcessViewController.swift; sourceTree = "<group>"; };
-		9DFD198F1B95257A00AD3535 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9DFD19921B95257A00AD3535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9DFD19981B95257A00AD3535 /* jquiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jquiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DFD199D1B95257A00AD3535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DFD199E1B95257A00AD3535 /* jquiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jquiTests.swift; sourceTree = "<group>"; };
-		9DFD19A91B95261000AD3535 /* jq-osx-amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "jq-osx-amd64"; path = "jq/jq-osx-amd64"; sourceTree = "<group>"; };
-		9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryRunner.swift; path = classes/QueryRunner.swift; sourceTree = "<group>"; };
-		9DFD19AE1B95402D00AD3535 /* JsonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonUtils.swift; path = classes/JsonUtils.swift; sourceTree = "<group>"; };
-		9DFD19B01B95468D00AD3535 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		9DDEF7C71BB8C2CD008EC1C1 /* jqui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jqui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDEF7CA1BB8C2CD008EC1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DDEF7D01BB8C2CD008EC1C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DDEF7D31BB8C2CD008EC1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DDEF7D51BB8C2CD008EC1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDEF7DD1BB8C351008EC1C1 /* JQDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQDocument.swift; path = classes/JQDocument.swift; sourceTree = "<group>"; };
+		9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQViewController.swift; path = classes/JQViewController.swift; sourceTree = "<group>"; };
+		9DDEF7E11BB8C362008EC1C1 /* jq-osx-amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "jq-osx-amd64"; path = "jq/jq-osx-amd64"; sourceTree = "<group>"; };
+		9DDEF7E31BB8C392008EC1C1 /* JQSavedQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JQSavedQuery.swift; path = classes/JQSavedQuery.swift; sourceTree = "<group>"; };
+		9DDEF7E51BB8C392008EC1C1 /* JsonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonUtils.swift; path = classes/JsonUtils.swift; sourceTree = "<group>"; };
+		9DDEF7E61BB8C392008EC1C1 /* QueryRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryRunner.swift; path = classes/QueryRunner.swift; sourceTree = "<group>"; };
+		9DDEF7E71BB8C392008EC1C1 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = classes/HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9DFD19831B95257A00AD3535 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DFD19951B95257A00AD3535 /* Frameworks */ = {
+		9DDEF7C41BB8C2CD008EC1C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,78 +45,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9DFD197D1B95257A00AD3535 = {
+		9DDEF7BE1BB8C2CD008EC1C1 = {
 			isa = PBXGroup;
 			children = (
-				9DFD19881B95257A00AD3535 /* jqui */,
-				9DFD199B1B95257A00AD3535 /* jquiTests */,
-				9DFD19871B95257A00AD3535 /* Products */,
+				9DDEF7C91BB8C2CD008EC1C1 /* jqui */,
+				9DDEF7C81BB8C2CD008EC1C1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9DFD19871B95257A00AD3535 /* Products */ = {
+		9DDEF7C81BB8C2CD008EC1C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DFD19861B95257A00AD3535 /* jqui.app */,
-				9DFD19981B95257A00AD3535 /* jquiTests.xctest */,
+				9DDEF7C71BB8C2CD008EC1C1 /* jqui.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DFD19881B95257A00AD3535 /* jqui */ = {
+		9DDEF7C91BB8C2CD008EC1C1 /* jqui */ = {
 			isa = PBXGroup;
 			children = (
-				9DFD19AB1B9539A700AD3535 /* classes */,
-				9DFD19A81B95260300AD3535 /* jq */,
-				9DFD198B1B95257A00AD3535 /* AppDelegate.swift */,
-				9DFD198D1B95257A00AD3535 /* JsonProcessViewController.swift */,
-				9DFD198F1B95257A00AD3535 /* Images.xcassets */,
-				9DFD19911B95257A00AD3535 /* Main.storyboard */,
-				9DFD19891B95257A00AD3535 /* Supporting Files */,
-				9DFD19B01B95468D00AD3535 /* HelpViewController.swift */,
+				9DDEF7DC1BB8C309008EC1C1 /* classes */,
+				9DDEF7DB1BB8C300008EC1C1 /* jq */,
+				9DDEF7CA1BB8C2CD008EC1C1 /* AppDelegate.swift */,
+				9DDEF7D01BB8C2CD008EC1C1 /* Assets.xcassets */,
+				9DDEF7D21BB8C2CD008EC1C1 /* Main.storyboard */,
+				9DDEF7D51BB8C2CD008EC1C1 /* Info.plist */,
 			);
 			path = jqui;
 			sourceTree = "<group>";
 		};
-		9DFD19891B95257A00AD3535 /* Supporting Files */ = {
+		9DDEF7DB1BB8C300008EC1C1 /* jq */ = {
 			isa = PBXGroup;
 			children = (
-				9DFD198A1B95257A00AD3535 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9DFD199B1B95257A00AD3535 /* jquiTests */ = {
-			isa = PBXGroup;
-			children = (
-				9DFD199E1B95257A00AD3535 /* jquiTests.swift */,
-				9DFD199C1B95257A00AD3535 /* Supporting Files */,
-			);
-			path = jquiTests;
-			sourceTree = "<group>";
-		};
-		9DFD199C1B95257A00AD3535 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9DFD199D1B95257A00AD3535 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9DFD19A81B95260300AD3535 /* jq */ = {
-			isa = PBXGroup;
-			children = (
-				9DFD19A91B95261000AD3535 /* jq-osx-amd64 */,
+				9DDEF7E11BB8C362008EC1C1 /* jq-osx-amd64 */,
 			);
 			name = jq;
 			sourceTree = "<group>";
 		};
-		9DFD19AB1B9539A700AD3535 /* classes */ = {
+		9DDEF7DC1BB8C309008EC1C1 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				9DFD19AC1B953A0600AD3535 /* QueryRunner.swift */,
-				9DFD19AE1B95402D00AD3535 /* JsonUtils.swift */,
-				9DD71A591BA0F493000CADEC /* JQSavedQuery.swift */,
+				9DDEF7E31BB8C392008EC1C1 /* JQSavedQuery.swift */,
+				9DDEF7E51BB8C392008EC1C1 /* JsonUtils.swift */,
+				9DDEF7E61BB8C392008EC1C1 /* QueryRunner.swift */,
+				9DDEF7E71BB8C392008EC1C1 /* HelpViewController.swift */,
+				9DDEF7DD1BB8C351008EC1C1 /* JQDocument.swift */,
+				9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -143,13 +98,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DFD19851B95257A00AD3535 /* jqui */ = {
+		9DDEF7C61BB8C2CD008EC1C1 /* jqui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DFD19A21B95257A00AD3535 /* Build configuration list for PBXNativeTarget "jqui" */;
+			buildConfigurationList = 9DDEF7D81BB8C2CD008EC1C1 /* Build configuration list for PBXNativeTarget "jqui" */;
 			buildPhases = (
-				9DFD19821B95257A00AD3535 /* Sources */,
-				9DFD19831B95257A00AD3535 /* Frameworks */,
-				9DFD19841B95257A00AD3535 /* Resources */,
+				9DDEF7C31BB8C2CD008EC1C1 /* Sources */,
+				9DDEF7C41BB8C2CD008EC1C1 /* Frameworks */,
+				9DDEF7C51BB8C2CD008EC1C1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,48 +112,24 @@
 			);
 			name = jqui;
 			productName = jqui;
-			productReference = 9DFD19861B95257A00AD3535 /* jqui.app */;
+			productReference = 9DDEF7C71BB8C2CD008EC1C1 /* jqui.app */;
 			productType = "com.apple.product-type.application";
-		};
-		9DFD19971B95257A00AD3535 /* jquiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DFD19A51B95257A00AD3535 /* Build configuration list for PBXNativeTarget "jquiTests" */;
-			buildPhases = (
-				9DFD19941B95257A00AD3535 /* Sources */,
-				9DFD19951B95257A00AD3535 /* Frameworks */,
-				9DFD19961B95257A00AD3535 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9DFD199A1B95257A00AD3535 /* PBXTargetDependency */,
-			);
-			name = jquiTests;
-			productName = jquiTests;
-			productReference = 9DFD19981B95257A00AD3535 /* jquiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9DFD197E1B95257A00AD3535 /* Project object */ = {
+		9DDEF7BF1BB8C2CD008EC1C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Matthew Mondok";
 				TargetAttributes = {
-					9DFD19851B95257A00AD3535 = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					9DFD19971B95257A00AD3535 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 9DFD19851B95257A00AD3535;
+					9DDEF7C61BB8C2CD008EC1C1 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = 9DFD19811B95257A00AD3535 /* Build configuration list for PBXProject "jqui" */;
+			buildConfigurationList = 9DDEF7C21BB8C2CD008EC1C1 /* Build configuration list for PBXProject "jqui" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -206,74 +137,51 @@
 				en,
 				Base,
 			);
-			mainGroup = 9DFD197D1B95257A00AD3535;
-			productRefGroup = 9DFD19871B95257A00AD3535 /* Products */;
+			mainGroup = 9DDEF7BE1BB8C2CD008EC1C1;
+			productRefGroup = 9DDEF7C81BB8C2CD008EC1C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DFD19851B95257A00AD3535 /* jqui */,
-				9DFD19971B95257A00AD3535 /* jquiTests */,
+				9DDEF7C61BB8C2CD008EC1C1 /* jqui */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9DFD19841B95257A00AD3535 /* Resources */ = {
+		9DDEF7C51BB8C2CD008EC1C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFD19901B95257A00AD3535 /* Images.xcassets in Resources */,
-				9DFD19AA1B95261000AD3535 /* jq-osx-amd64 in Resources */,
-				9DFD19931B95257A00AD3535 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DFD19961B95257A00AD3535 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9DDEF7D11BB8C2CD008EC1C1 /* Assets.xcassets in Resources */,
+				9DDEF7E21BB8C362008EC1C1 /* jq-osx-amd64 in Resources */,
+				9DDEF7D41BB8C2CD008EC1C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9DFD19821B95257A00AD3535 /* Sources */ = {
+		9DDEF7C31BB8C2CD008EC1C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFD198E1B95257A00AD3535 /* JsonProcessViewController.swift in Sources */,
-				9DFD19AF1B95402D00AD3535 /* JsonUtils.swift in Sources */,
-				9DFD198C1B95257A00AD3535 /* AppDelegate.swift in Sources */,
-				9DFD19AD1B953A0600AD3535 /* QueryRunner.swift in Sources */,
-				9DFD19B11B95468D00AD3535 /* HelpViewController.swift in Sources */,
-				9DD71A5A1BA0F493000CADEC /* JQSavedQuery.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DFD19941B95257A00AD3535 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DFD199F1B95257A00AD3535 /* jquiTests.swift in Sources */,
+				9DDEF7DF1BB8C351008EC1C1 /* JQDocument.swift in Sources */,
+				9DDEF7EB1BB8C392008EC1C1 /* QueryRunner.swift in Sources */,
+				9DDEF7EC1BB8C392008EC1C1 /* HelpViewController.swift in Sources */,
+				9DDEF7E81BB8C392008EC1C1 /* JQSavedQuery.swift in Sources */,
+				9DDEF7CB1BB8C2CD008EC1C1 /* AppDelegate.swift in Sources */,
+				9DDEF7E01BB8C351008EC1C1 /* JQViewController.swift in Sources */,
+				9DDEF7EA1BB8C392008EC1C1 /* JsonUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		9DFD199A1B95257A00AD3535 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9DFD19851B95257A00AD3535 /* jqui */;
-			targetProxy = 9DFD19991B95257A00AD3535 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		9DFD19911B95257A00AD3535 /* Main.storyboard */ = {
+		9DDEF7D21BB8C2CD008EC1C1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9DFD19921B95257A00AD3535 /* Base */,
+				9DDEF7D31BB8C2CD008EC1C1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -281,7 +189,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9DFD19A01B95257A00AD3535 /* Debug */ = {
+		9DDEF7D61BB8C2CD008EC1C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,6 +210,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -310,7 +219,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -325,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		9DFD19A11B95257A00AD3535 /* Release */ = {
+		9DDEF7D71BB8C2CD008EC1C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,95 +269,51 @@
 			};
 			name = Release;
 		};
-		9DFD19A31B95257A00AD3535 /* Debug */ = {
+		9DDEF7D91BB8C2CD008EC1C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = jqui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mondok.digital.jqui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		9DFD19A41B95257A00AD3535 /* Release */ = {
+		9DDEF7DA1BB8C2CD008EC1C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = jqui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mondok.digital.jqui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		9DFD19A61B95257A00AD3535 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = jquiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jqui.app/Contents/MacOS/jqui";
-			};
-			name = Debug;
-		};
-		9DFD19A71B95257A00AD3535 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = jquiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jqui.app/Contents/MacOS/jqui";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DFD19811B95257A00AD3535 /* Build configuration list for PBXProject "jqui" */ = {
+		9DDEF7C21BB8C2CD008EC1C1 /* Build configuration list for PBXProject "jqui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DFD19A01B95257A00AD3535 /* Debug */,
-				9DFD19A11B95257A00AD3535 /* Release */,
+				9DDEF7D61BB8C2CD008EC1C1 /* Debug */,
+				9DDEF7D71BB8C2CD008EC1C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DFD19A21B95257A00AD3535 /* Build configuration list for PBXNativeTarget "jqui" */ = {
+		9DDEF7D81BB8C2CD008EC1C1 /* Build configuration list for PBXNativeTarget "jqui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DFD19A31B95257A00AD3535 /* Debug */,
-				9DFD19A41B95257A00AD3535 /* Release */,
+				9DDEF7D91BB8C2CD008EC1C1 /* Debug */,
+				9DDEF7DA1BB8C2CD008EC1C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9DFD19A51B95257A00AD3535 /* Build configuration list for PBXNativeTarget "jquiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9DFD19A61B95257A00AD3535 /* Debug */,
-				9DFD19A71B95257A00AD3535 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9DFD197E1B95257A00AD3535 /* Project object */;
+	rootObject = 9DDEF7BF1BB8C2CD008EC1C1 /* Project object */;
 }
