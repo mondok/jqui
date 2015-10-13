@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  JQViewController.swift
 //  jqui
 //
 //  Created by Matthew Mondok on 9/27/15.
@@ -9,8 +9,6 @@
 import Cocoa
 
 class JQViewController: NSViewController {
-
-
     
     @IBOutlet var jqOutputTextView: NSTextView!
     @IBOutlet var jsonInputTextView: NSTextView!

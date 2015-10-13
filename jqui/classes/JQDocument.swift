@@ -1,5 +1,5 @@
 //
-//  Document.swift
+//  JQDocument.swift
 //  jqui
 //
 //  Created by Matthew Mondok on 9/27/15.
@@ -18,12 +18,10 @@ class JQDocument: NSDocument {
     
     override init() {
         super.init()
-        // Add your subclass-specific initialization here.
     }
     
     override func windowControllerDidLoadNib(aController: NSWindowController) {
         super.windowControllerDidLoadNib(aController)
-        // Add any code here that needs to be executed once the windowController has loaded the document's window.
     }
     
     override class func autosavesInPlace() -> Bool {
@@ -31,7 +29,6 @@ class JQDocument: NSDocument {
     }
     
     override func makeWindowControllers() {
-        // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         let windowController = storyboard.instantiateControllerWithIdentifier("Document Window Controller") as! NSWindowController
         _contentViewControler = windowController.contentViewController as? JQViewController

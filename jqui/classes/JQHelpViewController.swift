@@ -1,5 +1,5 @@
 //
-//  HelpViewController
+//  JQHelpViewController.swift
 //  jqui
 //
 //  Created by Matthew Mondok on 8/31/15.

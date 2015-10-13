@@ -1,5 +1,5 @@
 //
-//  JsonUtils.swift
+//  JQJsonUtils.swift
 //  jqui
 //
 //  Created by Matthew Mondok on 8/31/15.
@@ -24,8 +24,7 @@ class JQJsonUtils{
         do {
             let obj:AnyObject = try jsonToAny(str)
             return jsonStringify(obj, prettyPrinted: true)
-        } catch  {
-        }
+        } catch {print("Unable to pretty print \(error)")}
         return str
     }
     
