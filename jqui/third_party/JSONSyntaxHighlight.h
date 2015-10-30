@@ -68,6 +68,7 @@
 @property (nonatomic, strong) NSDictionary *keyAttributes;
 @property (nonatomic, strong) NSDictionary *stringAttributes;
 @property (nonatomic, strong) NSDictionary *nonStringAttributes;
+@property BOOL validJson;
 
 // Platform dependent helper functions
 #if (TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)

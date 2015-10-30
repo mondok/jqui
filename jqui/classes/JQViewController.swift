@@ -48,10 +48,13 @@ class JQViewController: NSViewController {
     }
     
     @IBAction func prettifyTapped(sender: AnyObject) {
-        let inputText = jsonInputTextView.string!
-        let js = JSONSyntaxHighlight(JSON: JQJsonUtils.prettyPrint(inputText))
-        
-        jsonInputTextView.textStorage?.setAttributedString( js.highlightJSON())
+        let inputText = jsonInputTextView.string
+        let valid = JQJsonUtils.isValidJson(inputText!)
+        if valid{
+            let prettyText = JQJsonUtils.prettyPrint(inputText!)
+            let js = JSONSyntaxHighlight(JSON: JQJsonUtils.prettyPrint(prettyText))
+            jsonInputTextView.textStorage?.setAttributedString(js.highlightJSON())
+        }
     }
     
     @IBAction func processJsonTapped(sender: AnyObject) {

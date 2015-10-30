@@ -28,9 +28,13 @@ class JQJsonUtils{
         return str
     }
     
+    class func validJson(value: AnyObject) -> Bool{
+        return NSJSONSerialization.isValidJSONObject(value)
+    }
+    
     class func jsonStringify(value: AnyObject, prettyPrinted: Bool = false) -> String {
         let options:NSJSONWritingOptions = prettyPrinted ? NSJSONWritingOptions.PrettyPrinted : NSJSONWritingOptions.init(rawValue: 0)
-        if NSJSONSerialization.isValidJSONObject(value) {
+        if validJson(value) {
             if let data = try? NSJSONSerialization.dataWithJSONObject(value, options: options) {
                 if let string = NSString(data: data, encoding: NSUTF8StringEncoding) {
                     return string as String

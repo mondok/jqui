@@ -49,7 +49,7 @@
         _JSON = JSON;
         
         // create the object local regex
-	regex = [NSRegularExpression regularExpressionWithPattern:@"^( *)(\".+\" : )?(\"[^\"]*\"|[\\w.+-]*)?([,\\[\\]{}]?,?$)"
+        regex = [NSRegularExpression regularExpressionWithPattern:@"^( *)(\".+\" : )?(\"[^\"]*\"|[\\w.+-]*)?([,\\[\\]{}]?,?$)"
                                                           options:NSRegularExpressionAnchorsMatchLines
                                                             error:nil];
         
@@ -58,8 +58,10 @@
             NSJSONWritingOptions options = NSJSONWritingPrettyPrinted;
             NSData *data = [NSJSONSerialization dataWithJSONObject:self.JSON options:options error:nil];
             NSString *o = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            self.validJson = YES;
             _parsedJSON = o;
         } else {
+            self.validJson = NO;
             _parsedJSON = [NSString stringWithFormat:@"%@", self.JSON];
         }
         
