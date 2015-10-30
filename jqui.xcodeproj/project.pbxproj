@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DD433DF1BE31D75001EEC5D /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD433DE1BE31D75001EEC5D /* JSONSyntaxHighlight.m */; };
 		9DDEF7CB1BB8C2CD008EC1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7CA1BB8C2CD008EC1C1 /* AppDelegate.swift */; };
 		9DDEF7D11BB8C2CD008EC1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7D01BB8C2CD008EC1C1 /* Assets.xcassets */; };
 		9DDEF7D41BB8C2CD008EC1C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7D21BB8C2CD008EC1C1 /* Main.storyboard */; };
-		9DDEF7DF1BB8C351008EC1C1 /* JQDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7DD1BB8C351008EC1C1 /* JQDocument.swift */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7E01BB8C351008EC1C1 /* JQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7E21BB8C362008EC1C1 /* jq-osx-amd64 in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E11BB8C362008EC1C1 /* jq-osx-amd64 */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7EA1BB8C392008EC1C1 /* JQJsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E51BB8C392008EC1C1 /* JQJsonUtils.swift */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7EB1BB8C392008EC1C1 /* JQQueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E61BB8C392008EC1C1 /* JQQueryRunner.swift */; settings = {ASSET_TAGS = (); }; };
-		9DDEF7EC1BB8C392008EC1C1 /* JQHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E71BB8C392008EC1C1 /* JQHelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDEF7DF1BB8C351008EC1C1 /* JQDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7DD1BB8C351008EC1C1 /* JQDocument.swift */; };
+		9DDEF7E01BB8C351008EC1C1 /* JQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7DE1BB8C351008EC1C1 /* JQViewController.swift */; };
+		9DDEF7E21BB8C362008EC1C1 /* jq-osx-amd64 in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E11BB8C362008EC1C1 /* jq-osx-amd64 */; };
+		9DDEF7EA1BB8C392008EC1C1 /* JQJsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E51BB8C392008EC1C1 /* JQJsonUtils.swift */; };
+		9DDEF7EB1BB8C392008EC1C1 /* JQQueryRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E61BB8C392008EC1C1 /* JQQueryRunner.swift */; };
+		9DDEF7EC1BB8C392008EC1C1 /* JQHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEF7E71BB8C392008EC1C1 /* JQHelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DD433D81BE31D43001EEC5D /* jqui-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jqui-Bridging-Header.h"; sourceTree = "<group>"; };
+		9DD433DD1BE31D75001EEC5D /* JSONSyntaxHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONSyntaxHighlight.h; path = third_party/JSONSyntaxHighlight.h; sourceTree = "<group>"; };
+		9DD433DE1BE31D75001EEC5D /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONSyntaxHighlight.m; path = third_party/JSONSyntaxHighlight.m; sourceTree = "<group>"; };
 		9DDEF7C71BB8C2CD008EC1C1 /* jqui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jqui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDEF7CA1BB8C2CD008EC1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DDEF7D01BB8C2CD008EC1C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,11 +47,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DD433DC1BE31D4E001EEC5D /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				9DD433DD1BE31D75001EEC5D /* JSONSyntaxHighlight.h */,
+				9DD433DE1BE31D75001EEC5D /* JSONSyntaxHighlight.m */,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
 		9DDEF7BE1BB8C2CD008EC1C1 = {
 			isa = PBXGroup;
 			children = (
 				9DDEF7C91BB8C2CD008EC1C1 /* jqui */,
 				9DDEF7C81BB8C2CD008EC1C1 /* Products */,
+				9DD433D81BE31D43001EEC5D /* jqui-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +76,7 @@
 		9DDEF7C91BB8C2CD008EC1C1 /* jqui */ = {
 			isa = PBXGroup;
 			children = (
+				9DD433DC1BE31D4E001EEC5D /* third_party */,
 				9DDEF7DC1BB8C309008EC1C1 /* classes */,
 				9DDEF7DB1BB8C300008EC1C1 /* jq */,
 				9DDEF7CA1BB8C2CD008EC1C1 /* AppDelegate.swift */,
@@ -118,6 +133,7 @@
 		9DDEF7BF1BB8C2CD008EC1C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Matthew Mondok";
 				TargetAttributes = {
@@ -165,6 +181,7 @@
 				9DDEF7DF1BB8C351008EC1C1 /* JQDocument.swift in Sources */,
 				9DDEF7EB1BB8C392008EC1C1 /* JQQueryRunner.swift in Sources */,
 				9DDEF7EC1BB8C392008EC1C1 /* JQHelpViewController.swift in Sources */,
+				9DD433DF1BE31D75001EEC5D /* JSONSyntaxHighlight.m in Sources */,
 				9DDEF7CB1BB8C2CD008EC1C1 /* AppDelegate.swift in Sources */,
 				9DDEF7E01BB8C351008EC1C1 /* JQViewController.swift in Sources */,
 				9DDEF7EA1BB8C392008EC1C1 /* JQJsonUtils.swift in Sources */,
@@ -269,11 +286,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = jqui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mondok.digital.jqui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jqui-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -281,11 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = jqui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mondok.digital.jqui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jqui-Bridging-Header.h";
 			};
 			name = Release;
 		};

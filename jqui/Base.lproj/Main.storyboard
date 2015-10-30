@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="9059"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -773,8 +773,8 @@
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VqF-MX-SDS">
-                                <rect key="frame" x="102" y="430" width="66" height="17"/>
-                                <buttonCell key="cell" type="inline" title="Prettify" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="Q8z-b8-jNH">
+                                <rect key="frame" x="99" y="430" width="103" height="17"/>
+                                <buttonCell key="cell" type="inline" title="Prettify/Highlight" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="Q8z-b8-jNH">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="smallSystemBold"/>
                                 </buttonCell>
