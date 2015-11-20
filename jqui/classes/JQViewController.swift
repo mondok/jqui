@@ -71,10 +71,14 @@ class JQViewController: NSViewController {
             return
         }
         
-        let output = _queryRunner.runTask(inputText, query: query)
-        let js = JSONSyntaxHighlight(JSON: output)
-        
-        jqOutputTextView.textStorage?.setAttributedString( js.highlightJSON())
+        var output = _queryRunner.runTask(inputText, query: query)
+        if JQJsonUtils.isValidJson(output){
+            output = output.stringByReplacingOccurrencesOfString("\n", withString: "")
+            let js = JSONSyntaxHighlight(JSON: JQJsonUtils.prettyPrint(output))
+            jqOutputTextView.textStorage?.setAttributedString( js.highlightJSON())
+        } else {
+            jqOutputTextView.string = output
+        }
         
     }
     
